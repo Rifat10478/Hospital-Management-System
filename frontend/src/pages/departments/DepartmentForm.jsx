@@ -46,7 +46,7 @@ function DepartmentForm() {
 
 
             const response = await fetch(
-                `http://127.0.0.1:8000/api/hospital/departments/${id}/`,
+                `https://hospital-management-system-zjkw.onrender.com/api/hospital/departments/${id}/`,
                 {
                     headers: {
                         Authorization:
@@ -108,8 +108,8 @@ function DepartmentForm() {
 
             const response = await fetch(
                 isEdit
-                    ? `http://127.0.0.1:8000/api/hospital/departments/${id}/`
-                    : "http://127.0.0.1:8000/api/hospital/departments/",
+                    ? `https://hospital-management-system-zjkw.onrender.com/api/hospital/departments/${id}/`
+                    : "https://hospital-management-system-zjkw.onrender.com/api/hospital/departments/",
                 {
                     method: isEdit
                         ? "PUT"
