@@ -54,7 +54,7 @@ function MedicineForm() {
 
 
             const response = await fetch(
-                `http://127.0.0.1:8000/api/hospital/medicines/${id}/`,
+                `https://hospital-management-system-zjkw.onrender.com/api/hospital/medicines/${id}/`,
                 {
                     headers: {
                         Authorization:
@@ -131,8 +131,8 @@ function MedicineForm() {
             const response = await fetch(
 
                 isEdit
-                    ? `http://127.0.0.1:8000/api/hospital/medicines/${id}/`
-                    : "http://127.0.0.1:8000/api/hospital/medicines/",
+                    ? `https://hospital-management-system-zjkw.onrender.com/api/hospital/medicines/${id}/`
+                    : "https://hospital-management-system-zjkw.onrender.com/api/hospital/medicines/",
 
                 {
 
