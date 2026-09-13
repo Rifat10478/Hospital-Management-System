@@ -64,7 +64,7 @@ function AppointmentForm() {
 
         const response =
             await fetch(
-                "http://127.0.0.1:8000/api/hospital/doctors/",
+                "https://hospital-management-system-zjkw.onrender.com/api/hospital/doctors/",
                 {
                     headers: {
                         Authorization:
@@ -101,7 +101,7 @@ function AppointmentForm() {
 
         const response =
             await fetch(
-                "http://127.0.0.1:8000/api/hospital/patients/",
+                "https://hospital-management-system-zjkw.onrender.com/api/hospital/patients/",
                 {
                     headers: {
                         Authorization:
@@ -148,7 +148,7 @@ function AppointmentForm() {
 
             const response =
                 await fetch(
-                    `http://127.0.0.1:8000/api/hospital/appointments/${id}/`,
+                    `https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/${id}/`,
                     {
                         headers: {
                             Authorization:
@@ -260,9 +260,9 @@ function AppointmentForm() {
 
             const url = isEdit
 
-                ? `http://127.0.0.1:8000/api/hospital/appointments/${id}/`
+                ? `https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/${id}/`
 
-                : "http://127.0.0.1:8000/api/hospital/appointments/";
+                : "https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/";
 
 
             const method =
