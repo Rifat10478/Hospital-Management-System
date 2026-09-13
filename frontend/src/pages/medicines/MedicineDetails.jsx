@@ -41,7 +41,7 @@ function MedicineDetails() {
 
 
             const response = await fetch(
-                `http://127.0.0.1:8000/api/hospital/medicines/${id}/`,
+                `https://hospital-management-system-zjkw.onrender.com/api/hospital/medicines/${id}/`,
                 {
                     headers: {
                         Authorization:
