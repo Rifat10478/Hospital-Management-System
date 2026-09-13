@@ -45,7 +45,7 @@ function Register() {
 
         try {
             const response = await fetch(
-                "http://127.0.0.1:8000/api/accounts/register/",
+                "https://hospital-management-system-zjkw.onrender.com/api/accounts/register/",
                 {
                     method: "POST",
 
