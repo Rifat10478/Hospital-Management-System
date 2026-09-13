@@ -28,7 +28,7 @@ function DepartmentList() {
                 );
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/hospital/departments/",
+                "https://hospital-management-system-zjkw.onrender.com/api/hospital/departments/",
                 {
                     headers: {
                         Authorization:
@@ -122,7 +122,7 @@ function DepartmentList() {
 
 
             const response = await fetch(
-                `http://127.0.0.1:8000/api/hospital/departments/${id}/`,
+                `https://hospital-management-system-zjkw.onrender.com/api/hospital/departments/${id}/`,
                 {
                     method: "DELETE",
 
