@@ -45,7 +45,7 @@ function AppointmentList() {
 
 
             let url =
-                "http://127.0.0.1:8000/api/hospital/appointments/";
+                "https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/";
 
 
             const params = new URLSearchParams();
@@ -175,7 +175,7 @@ function AppointmentList() {
 
             const response =
                 await fetch(
-                    `http://127.0.0.1:8000/api/hospital/appointments/${id}/cancel/`,
+                    `https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/${id}/cancel/`,
                     {
                         method: "POST",
 
