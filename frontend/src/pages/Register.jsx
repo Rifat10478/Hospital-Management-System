@@ -224,12 +224,12 @@ function Register() {
         </option>
 
 
-        <option value="doctors">
-            Doctors
+        <option value="receptionist">
+            Receptionist
         </option>
 
-        <option value="patients">
-            Patients
+        <option value="admin">
+            Admin
         </option>
 
     </select>

@@ -107,6 +107,11 @@ function Login() {
                             : "Login"
                         }
                     </button>
+                    {/* Register Option */}
+                    <div className="register-option">
+                        <p>Don't have an account?</p>
+                        <button type="button" onClick={() => navigate("/register")} > Register </button>
+                    </div>
 
                 </form>
 
