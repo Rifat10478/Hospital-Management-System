@@ -6,7 +6,7 @@ import {
 
 const AuthContext = createContext(null);
 
-const API_URL = "http://127.0.0.1:8000/api";
+const API_URL = "https://hospital-management-system-zjkw.onrender.com/api";
 
 export function AuthProvider({ children }) {
 

@@ -78,14 +78,14 @@ function PrescriptionForm() {
             ] = await Promise.all([
 
                 fetch(
-                    "http://127.0.0.1:8000/api/hospital/appointments/",
+                    "https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/",
                     {
                         headers,
                     }
                 ),
 
                 fetch(
-                    "http://127.0.0.1:8000/api/hospital/medicines/",
+                    "https://hospital-management-system-zjkw.onrender.com/api/hospital/medicines/",
                     {
                         headers,
                     }
@@ -324,7 +324,7 @@ function PrescriptionForm() {
 
             const prescriptionResponse =
                 await fetch(
-                    "http://127.0.0.1:8000/api/hospital/prescriptions/",
+                    "https://hospital-management-system-zjkw.onrender.com/api/hospital/prescriptions/",
                     {
                         method: "POST",
 
@@ -386,7 +386,7 @@ function PrescriptionForm() {
 
                 const medicineResponse =
                     await fetch(
-                        "http://127.0.0.1:8000/api/hospital/prescription-medicines/",
+                        "https://hospital-management-system-zjkw.onrender.com/api/hospital/prescription-medicines/",
                         {
                             method: "POST",
 

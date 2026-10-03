@@ -23,7 +23,7 @@ function MedicineList() {
 
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/hospital/medicines/",
+                "https://hospital-management-system-zjkw.onrender.com/api/hospital/medicines/",
                 {
                     headers: {
                         Authorization:
@@ -90,7 +90,7 @@ function MedicineList() {
 
 
             const response = await fetch(
-                `http://127.0.0.1:8000/api/hospital/medicines/${id}/`,
+                `https://hospital-management-system-zjkw.onrender.com/api/hospital/medicines/${id}/`,
                 {
                     method: "DELETE",
 

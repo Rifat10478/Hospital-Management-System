@@ -64,28 +64,28 @@ function Dashboard() {
                 ] = await Promise.all([
 
                     fetch(
-                        "http://127.0.0.1:8000/api/hospital/doctors/",
+                        "https://hospital-management-system-zjkw.onrender.com/api/hospital/doctors/",
                         {
                             headers,
                         }
                     ),
 
                     fetch(
-                        "http://127.0.0.1:8000/api/hospital/patients/",
+                        "https://hospital-management-system-zjkw.onrender.com/api/hospital/patients/",
                         {
                             headers,
                         }
                     ),
 
                     fetch(
-                        "http://127.0.0.1:8000/api/hospital/appointments/",
+                        "https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/",
                         {
                             headers,
                         }
                     ),
 
                     fetch(
-                        "http://127.0.0.1:8000/api/billing/bills/",
+                        "https://hospital-management-system-zjkw.onrender.com/api/billing/bills/",
                         {
                             headers,
                         }

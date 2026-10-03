@@ -69,7 +69,7 @@ function BillForm() {
 
             const patientsResponse =
                 await fetch(
-                    "http://127.0.0.1:8000/api/hospital/patients/",
+                    "https://hospital-management-system-zjkw.onrender.com/api/hospital/patients/",
                     {
                         headers
                     }
@@ -95,7 +95,7 @@ function BillForm() {
 
             const appointmentsResponse =
                 await fetch(
-                    "http://127.0.0.1:8000/api/hospital/appointments/",
+                    "https://hospital-management-system-zjkw.onrender.com/api/hospital/appointments/",
                     {
                         headers
                     }
@@ -117,7 +117,7 @@ function BillForm() {
 
                 const billResponse =
                     await fetch(
-                        `http://127.0.0.1:8000/api/billing/bills/${id}/`,
+                        `https://hospital-management-system-zjkw.onrender.com/api/billing/bills/${id}/`,
                         {
                             headers
                         }
@@ -186,8 +186,8 @@ function BillForm() {
             const response =
                 await fetch(
                     isEdit
-                        ? `http://127.0.0.1:8000/api/billing/bills/${id}/`
-                        : "http://127.0.0.1:8000/api/billing/bills/",
+                        ? `https://hospital-management-system-zjkw.onrender.com/api/billing/bills/${id}/`
+                        : "https://hospital-management-system-zjkw.onrender.com/api/billing/bills/",
                     {
                         method:
                             isEdit

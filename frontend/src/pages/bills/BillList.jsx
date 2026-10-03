@@ -20,7 +20,7 @@ function BillList() {
                 localStorage.getItem("access_token");
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/billing/bills/",
+                "https://hospital-management-system-zjkw.onrender.com/api/billing/bills/",
                 {
                     headers: {
                         Authorization:
@@ -80,7 +80,7 @@ function BillList() {
                 localStorage.getItem("access_token");
 
             const response = await fetch(
-                `http://127.0.0.1:8000/api/billing/bills/${id}/`,
+                `https://hospital-management-system-zjkw.onrender.com/api/billing/bills/${id}/`,
                 {
                     method: "DELETE",
 
