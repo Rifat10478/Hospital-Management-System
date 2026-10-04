@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
+import { Link } from "react-router-dom";
 
 
 function Navbar({ onMenuClick }) {
@@ -95,23 +96,18 @@ function Navbar({ onMenuClick }) {
 
 
                     {showMenu && (
-
                         <div className="dropdown-menu">
-
                             <Link
                                 to="/dashboard"
-                                onClick={() => setShowMenu(false)}>
+                                onClick={() => setShowMenu(false)}
+                            >
                                 Dashboard
                             </Link>
 
-                            <button
-                                onClick={handleLogout}
-                            >
+                            <button onClick={handleLogout}>
                                 Logout
                             </button>
-
                         </div>
-
                     )}
 
                 </div>
