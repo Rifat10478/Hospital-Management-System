@@ -48,6 +48,9 @@ if render_host:
 # Application definition
 
 INSTALLED_APPS = [
+
+    "corsheaders",
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     "rest_framework",
-    "corsheaders",
+    
 
     "apps.accounts",
     "apps.hospital",
@@ -154,6 +157,7 @@ MAILERS = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://hospital-management-system-rosy-sigma.vercel.app",
 ]
 
 REST_FRAMEWORK = {
