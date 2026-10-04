@@ -98,9 +98,11 @@ function Navbar({ onMenuClick }) {
 
                         <div className="dropdown-menu">
 
-                            <a href="/dashboard">
+                            <Link
+                                to="/dashboard"
+                                onClick={() => setShowMenu(false)}>
                                 Dashboard
-                            </a>
+                            </Link>
 
                             <button
                                 onClick={handleLogout}
